@@ -5,12 +5,15 @@ body {
     background-color: #FCC9C0;
 }
 
+/* Header and Navigation Styles */
 #header-nav {
+    /* Header color */
     background-color: #D62F0D;
     color: #D62F0D;
 }
 
 .navbar-brand {
+    /* Header text styles */
     color: white;
     font-size: 36px;
     font-weight: bold;
@@ -20,4 +23,65 @@ body {
     text-decoration: none;
     color: white;
     align-items: center;
+    padding-left: 15px;
+}
+
+#nav-list li {
+    /* Navigation list styles */
+    width: 100%;
+    background-color: #FFA694;
+}
+
+#nav-list li a {
+    /* Navigation link styles */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nav-list li a:hover {
+    color: #D62F0D;
+}
+
+#nav-list li hr {
+    /* Navigation list item separator */
+    margin: 0;
+    border: 0;
+    border-top: 2px solid #D62F0D;
+}
+
+/* Main Content Styles */
+#main-content h2 {
+    /* Main content header styles */
+    margin-top: 20px;
+    color: #D62F0D;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#main-content section {
+    /* Main content section styles */
+    background-color: #FFA694;
+    padding: 10px 15px 5px 15px;
+    margin-top: 40px;
+}
+
+#main-content section h3 {
+    /* Main content section header styles */
+    color: #D62F0D;
+    font-size: 28px;
+}
+
+@media (max-width: 300px) {
+
+    /* Responsive styles for smaller screens */
+    .navbar-brand,
+    #nav-list li a,
+    #main-content h2,
+    #main-content section h3,
+    #main-content section p {
+        font-size: 10vw;
+    }
+
 }
